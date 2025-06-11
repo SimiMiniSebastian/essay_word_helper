@@ -1,4 +1,6 @@
 import streamlit as st
+import nltk
+nltk.download('wordnet')
 from nltk.corpus import wordnet
 import re
 
@@ -9,7 +11,7 @@ st.set_page_config(page_title="Essay Word Helper", page_icon="📝", layout="cen
 st.markdown("""
     <style>
     .stApp {
-       background-image: url("https://unsplash.com/photos/the-night-sky-with-stars-above-a-mountain-9aCkSl6YcXg");
+       background-image: url("https://images.unsplash.com/photo-1696344188945-5b8b91c18ef2?auto=format&fit=crop&w=1470&q=80");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
